@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Scheduling System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interview Scheduling System</h1>
+    </header>
+    
+    <main>
+        <section class="calendar-section">
+            <h2>Calendar View</h2>
+            <div id="calendar">
+                <!-- Placeholder for calendar -->
+            </div>
+        </section>
+        
+        <section class="booking-section">
+            <h2>Book an Interview Slot</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="date">Select Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Select Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Select Company:</label>
+                    <select id="company" name="company" required>
+                        <option value="Company A">Company A</option>
+                        <option value="Company B">Company B</option>
+                        <option value="Company C">Company C</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <button type="submit">Book Interview</button>
+            </form>
+        </section>
+
+        <section class="admin-section">
+            <h2>Admin Panel</h2>
+            <form id="adminLoginForm">
+                <div class="form-group">
+                    <label for="adminEmail">Admin Email:</label>
+                    <input type="email" id="adminEmail" name="adminEmail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="adminPassword">Password:</label>
+                    <input type="password" id="adminPassword" name="adminPassword" required>
+                </div>
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        
+        <section class="confirmation-section">
+            <h2>Confirmation</h2>
+            <div id="confirmationMessage"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Interview Scheduling System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
